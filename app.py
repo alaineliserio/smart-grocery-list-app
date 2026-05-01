@@ -1,7 +1,7 @@
 # Smart Grocery List App (Terminal Version)
 
 grocery_list = []
-
+# add item
 def add_item():
     item = input("Enter item to add: ").strip()
 
@@ -11,7 +11,7 @@ def add_item():
 
     grocery_list.append(item)
     print(f"'{item}' added successfully.")
-
+# remove item
 def remove_item():
     item = input("Enter item to remove: ").strip()
 
@@ -20,7 +20,7 @@ def remove_item():
         print(f"'{item}' removed successfully.")
     else:
         print("Error: item not found.")
-
+# view list
 def view_list():
     print("\n--- Grocery List ---")
 
@@ -29,7 +29,7 @@ def view_list():
     else:
         for i, item in enumerate(grocery_list, start=1):
             print(f"{i}. {item}")
-
+# option selection
 def main():
     while True:
         print("\n=== Smart Grocery List App ===")
